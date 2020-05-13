@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 11, 2020 3:54:07 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Client" table="client" schema="public" optimistic-lock="version">
+        <id name="regid" type="string">
+            <column name="regid" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstname" type="string">
+            <column name="firstname" length="20" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="lastname" length="20" />
+        </property>
+        <property name="phonenumber" type="string">
+            <column name="phonenumber" length="13" />
+        </property>
+        <property name="emailaddress" type="string">
+            <column name="emailaddress" length="30" />
+        </property>
+        <property name="clientcategory" type="string">
+            <column name="clientcategory" length="20" />
+        </property>
+        <property name="image" type="string">
+            <column name="image" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>
